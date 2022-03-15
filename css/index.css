@@ -1,0 +1,1129 @@
+@charset "utf-8";
+/* basic css */
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", Dotum, "돋움", Arial, sans-serif;
+	background: #fff;
+	color: #333;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 400;
+	letter-spacing: 0.12em;
+}
+ul li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	border: 0;
+	padding-top: 0px;
+	margin-right: 175px;
+}
+a:link {
+	color: #333;
+}
+
+a:hover {
+	color: #333333;
+}
+
+a:visited {
+	color: #333;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.cb {
+	clear: both;
+}
+
+.cf:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.fl a {
+	color: #000;
+}
+.inner {
+	max-width: 1400px;
+	margin: auto;
+}
+
+#header {
+	width: 100%;
+}
+#header_nav:before {
+	display: block;
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: transparent;
+	left: 0;
+	top: 130px;
+	z-index: 10;
+}
+
+/* gnb */
+.gnb .site_list 
+.site_list .btn {
+	color: white;
+	background: #0059a4;
+	margin-top: -8px;
+}
+#header_top {
+	border-bottom: 1px solid #c9c9c9;
+    height:40px;
+    line-height: 40px;
+}
+#header_top ul li a {
+	color: #333;
+	font-weight: bold;
+    display:block;
+    font-size: 16px;
+    letter-spacing: -.5px;
+}
+#header_top ul li{
+    padding:0 1.2em;
+}
+#header_top ul.site_list li:first-child{
+    background:#0059a4;
+}
+#header_top ul.site_list li:last-child{
+    border-right:1px solid #bbb;
+}
+#header_top ul.site_list li a.btn{
+    color:#fff;
+
+}
+
+
+
+/* header_nav */
+#lnb {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background: rgba(0,0,0,.5);
+	transition: height;
+	border-bottom: 1px solid #c9c9c9;
+}
+#lnb a:hover {
+	color: #0059a4;
+}
+#lnb>.inner{
+    display:flex;
+    justify-content: space-between;
+}
+#lnb #nav {
+    height:92px;
+    line-height: 95px;
+    max-width: 1400px;
+}
+#lnb #nav li.m_1{
+    text-align: center;
+    color:#fff;
+    padding: 0 20px;
+}
+#lnb #nav .m_1.fl{
+	max-width: 1140px;
+	margin-right: 20px;
+}
+#lnb .banner1 {
+    height:92px;
+    line-height: 92px;
+    max-width: 400px;
+    color:#fff;
+}
+#lnb .banner1 li {
+    padding:0 20px;
+    font-size: 20px;;
+}
+
+#lnb .width100 {
+	width: 100%;
+	position: absolute;
+	background: #fff;
+	left: 0;
+	top: 95px;
+	height: 0px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0);
+	border-bottom: 1px solid transparent;
+	z-index: 20;
+	padding: 0;
+	overflow: hidden;
+	transition: all 0.5s;
+	transition-property: height;
+}
+#lnb .m_width {
+	max-width: 1400px;
+	margin: auto;
+}
+
+#lnb #haeder_nav::after {
+	border-bottom: 1px solid #333;
+	z-index: 3333;
+}
+
+
+#lnb #nav li a {
+	display: block;
+	font-size: 19px;
+	font-weight: bold;
+    color:#fff;
+}
+#lnb #nav li:hover {
+	color: #0059a4;
+}
+#lnb #nav.cf a {
+	margin-right: 25px;
+}
+
+#lnb #nav li:hover .width100 {
+	height: auto;
+	padding: 20px 5px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0);
+	border-bottom: 1px solid transparent;
+}
+/* #lnb #nav li #korailLogo {
+	width: 195px;
+	margin-right: 20px;
+} */
+#lnb #nav li .m_width .m1_tit {
+	padding: 60px 10px;
+}
+#lnb #nav li .m_width .m1_tit img {
+	display: block;
+	margin: 20px auto;
+	width: 135px;
+	height: 135px;
+}
+#lnb #nav > ul > li:hover {
+	display: block;
+	/* border-bottom: 1px solid #777; */
+}
+
+#lnb #nav li ul li {
+	width: 200px;
+	border-right: 1px solid #c9c9c9;
+	padding-left: 10px;
+	font-size: 19px;
+	line-height: 15px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-align: left;
+	color: #333;
+}
+#lnb #nav li ul li dl dt a {
+	line-height: 20px;
+	color: #333333;
+	font-size: 16px;
+	font-weight: 600;
+	padding-top: 20px;
+}
+#lnb #nav li ul li dl dd a {
+	line-height: 200%;
+	color: #777;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+#main{position: relative;}
+#main .main_banner{height: calc(100vh - 133px);}
+
+
+#main .banner1 li {
+	position: relative;
+	padding: 0px 10px;
+	font-size: 1.8em;
+	left: 94%;
+	top: -100px;
+}
+
+.visual_inner .img {
+	width: 100%;
+	height: 50%;
+}
+.main_banner{
+    position: a;
+    height: c;
+}
+/* #main .visual_slide {
+	height: 100vh;
+	overflow: hidden;
+} */
+.m_visual {
+	background: url("https://info.korail.com/DATA/popup/20211206094337979_BrlP.jpg") no-repeat center top /cover;
+	width: 100%;
+	height: calc(100vh - 40px);
+	position: absolute;
+	z-index: -1;
+    top:-92px;
+}
+.visual_slide {
+	background: url("https://info.korail.com/site/info/images/main/slogan-group.png") no-repeat center right;
+	width: 85%;
+	height: 100%;
+	padding: 0 auto;
+	position: absolute;
+}
+
+.img-list_draggable {
+	overflow: hidden;
+	position: relative;
+}
+
+.img-list_draggable .popup_item1 img {
+	background: url(../pop_pic1.png) no-repeat center center;
+	box-sizing: border-box;
+	width: 400px;
+	height: 320px;
+	border-radius: 50px 50px;
+	background-size: auto 100%;
+	transition: background-size 0.3s linear;
+	box-shadow: 10px 10px 10px rgba(82, 79, 79, 0.541);
+	margin: 270px 200px;
+}
+
+.popup_slide .popup_item1 a:hover img {
+	background-size: auto 110%;
+}
+
+html .visual .visual_bottom_area {
+	display: block;
+	background-color: rgba(0, 84, 166, 0.85);
+	width: 100%;
+	height: 170px;
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+}
+
+.popup_slide {
+	transition: 0.5s;
+}
+
+.visual .visual_auto {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 25px;
+	width: 22px;
+	height: 22px;
+	margin-top: -11px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+
+/* 비쥬얼 팝업이미지 버튼 */
+.popup_control {
+	margin: 200px 220px;
+}
+
+.m_visual .popup_prev {
+	background: url(../outline_arrowbk.png) no-repeat center center;
+	width: 50px;
+	height: 50px;
+	opacity: 1;
+	z-index: 1;
+	border-radius: 50%;
+	border: none;
+	background-color: rgba(241, 237, 237, 0.89);
+}
+
+.m_visual .popup_controlfl:hover {
+	border: 2px solid #333;
+}
+
+.m_visual .popup_auto {
+	background: url(../black_pause.png) no-repeat center center;
+	width: 50px;
+	height: 50px;
+	margin: 0 8px;
+	opacity: 1;
+	z-index: 1;
+	border-radius: 50%;
+	border: none;
+	background-color: rgba(241, 237, 237, 0.89);
+}
+
+.m_visual .popup_next {
+	background: url(../outline_arrow.png) no-repeat center center;
+	width: 50px;
+	height: 50px;
+	opacity: 1;
+	z-index: 1;
+	border-radius: 50%;
+	border: none;
+	background-color: rgba(241, 237, 237, 0.89);
+}
+
+.m_visual .popup_next:hover {
+	border: 2px solid #333;
+}
+
+.m_visual .popup_count {
+	background: none;
+	background-color: rgba(241, 237, 237, 0.89);
+	border-radius: 50px 50px;
+	border: none;
+	width: 100px;
+	height: 50px;
+	opacity: 1;
+	z-index: 1;
+	font-size: 24px;
+	font-weight: 300;
+	margin: 0 10px;
+}
+/* 팝업이미지 버튼 끝 */
+
+.visual_bottom_area {
+	width: 100%;
+	margin: 0 auto;
+	height: 180px;
+	opacity: 1;
+	background: #0059a4e0;
+	position: absolute;
+	bottom: 0;
+	z-index: 31;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#main .visual_bottom_area {
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	width: 100%;
+	padding-top: 40px;
+}
+.visual_bottom_area a {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	background: url(../expand_more.png) no-repeat center center;
+	width: 50px;
+	height: 50px;
+	z-index: 1;
+	padding-bottom: 60px;
+	transition: 0.2s ease-in-out;
+}
+
+.visual_bottom_area a:hover {
+	text-decoration: underline;
+}
+.visual_ctbar {
+	border-radius: 50px 50px;
+	margin: 30px 220px;
+	background: #05365fe0;
+	width: 8%;
+	height: 45px;
+	float: left;
+	position: absolute;
+}
+
+.visual_control {
+	border-radius: 50px 50px;
+	background: #00000080;
+	margin-left: 1410px;
+	margin-top: -16px;
+	box-sizing: border-box;
+	border: 1px solid #0059a4;
+	box-shadow: 0 4px 8px rgb(0 0 0 / 25%);
+	width: 13%;
+	height: 80px;
+	text-align: justify;
+	padding: 18px 18px 15px 22px;
+	line-height: 20px;
+}
+
+.visual_control span {
+	font-size: 16px;
+	color: #fff;
+}
+.visual_btns.dot {
+	background: url(../white_dot.png);
+}
+/* 챗봇 */
+.chatbot {
+	border: 2px solid #2f97f5;
+	background-color: #005cb7;
+	background-image: url(https://info.korail.com/common/images/layout/chatbot-character.png);
+	background-size: 73px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	border-radius: 50%;
+	box-sizing: border-box;
+	position: relative;
+	padding: 45px;
+	margin-left: 1111px;
+	bottom: 37px;
+	z-index: 11;
+}
+.chatbot:hover {
+	background-color: #2f97f5;
+}
+
+.dot.fl {
+	background: url(../white_dot.png);
+	width: 17px;
+	height: 18px;
+	opacity: 1;
+	z-index: 1;
+	margin: 15px 4px;
+	border: 0;
+}
+.play_pause {
+	background: url(../white_play.png) no-repeat center center;
+	width: 24px;
+	height: 27px;
+	opacity: 1;
+	z-index: 1;
+	margin: 12px 10px;
+	border: 0;
+}
+.visual_text span {
+	text-align: justify;
+	top: 0;
+	margin-right: 1300px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1px;
+}
+/* 자주찾는메뉴 */
+/* 자주찾는메뉴상단 코레일로고이미지 */
+/* .section_content{
+    top: -392px;
+    left: 50%;
+    width: 2608px;
+    height: 630px;
+    background: url(https://info.korail.com/site/info/images/main/main_bg_logo.png) no-repeat center/contain;
+    opacity: 0.02;
+  
+} */
+
+
+#main .inner .section_content{
+    padding: 99px 0;
+    text-align: center;
+}
+
+.section_content .content_cf {
+	display: flex;
+	padding-bottom:100px;
+	padding-top: 40px;
+}
+.content_tit h1,.section_business h1{
+    padding: 40px 0;
+    font-size: 2em;
+    text-align: center;
+}
+.section_content .content_cf li {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 0;
+	max-width: 160px;
+	justify-content: center;
+	text-align: center;
+	margin: 20px;
+}
+.section_content .content_cf li .icon {
+	border: 1px solid #d7d7d7;
+	border-radius: 28px;
+	text-align: center;
+	height: 140px;
+	/* width: 140px; */
+	line-height: 20px;
+	position: relative;
+	margin: 0px 8px;
+}
+.section_content .content_cf li .icon span {
+	bottom: -60px;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%);
+	position: absolute;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: -1px;
+	width: 300px;
+}
+.section_content .content_cf li.c1 .icon {
+	background: url(http://info.korail.com/site/info/images/main/n2.svg) no-repeat center center;
+}
+.section_content .content_cf li.c2 .icon {
+	background: url(https://info.korail.com/site/info/images/main/n5.svg) no-repeat center center;
+}
+.section_content .content_cf li.c3 .icon {
+	background: url(https://info.korail.com/site/info/images/main/n9.svg) no-repeat center center;
+}
+.section_content .content_cf li.c4 .icon {
+	background: url(https://info.korail.com/site/info/images/main/n4.svg) no-repeat center center;
+}
+.section_content .content_cf li.c5 .icon {
+	background: url(https://info.korail.com/site/info/images/main/n3.svg) no-repeat center center;
+}
+.section_content .content_cf li.c6 .icon {
+	background: url(https://info.korail.com/site/info/images/main/n11.svg) no-repeat center center;
+}
+.section_content .content_cf li.c7 .icon {
+	background: url(https://info.korail.com/site/info/images/main/n7.svg) no-repeat center center;
+}
+
+.section_business{position:relative;}
+.section_business .bs_inner_wrap{display: flex;width:100vw;height: 500px;overflow-x: hidden;justify-content: center; background:#fdfaf7;}
+.section_business .bs_inner_wrap>.slider_wrap{display: flex;justify-content: space-around;align-content: center;align-items: center;}
+.section_business .bs_inner_wrap>.slider_wrap li{width:220px; padding-top:230px; position:absolute;}
+.section_business .bs_inner_wrap>.slider_wrap li.active{width:400px;padding-top: 300px;position:absolute;}
+.section_business .bs_inner_wrap>.slider_wrap li:nth-child(1){left:-50px}
+.section_business .bs_inner_wrap>.slider_wrap li:nth-child(3){left: 200px;}
+.section_business .bs_inner_wrap>.slider_wrap li:nth-child(4){right:200px}
+.section_business .bs_inner_wrap>.slider_wrap li:nth-child(5){right:-50px}
+
+
+
+.bs_item1 {
+	background: url(https://info.korail.com/site/info/images/main/business_img01.jpg) no-repeat center/cover;
+}
+.bs_item1 a {
+	color: #fff;
+	font-size: 19px;
+	font-weight: 600;
+	margin-top: 246px;
+	margin-left: 73px;
+	text-align: center;
+}
+.bs_item2 {
+	background: url(https://info.korail.com/site/info/images/main/business_img01.jpg) no-repeat center center;
+	width: 474px;
+	height: 570px;
+	margin-left: 443px;
+
+	box-sizing: border-box;
+	border: 1px solid #fff;
+}
+.bs_item2 a {
+	color: #000;
+	font-size: 19px;
+	font-weight: 600;
+	margin-top: 118px;
+	text-align: center;
+}
+.bs_item3 {
+	background: url(https://info.korail.com/site/info/images/main/business_img02_2.jpg) no-repeat center center;
+	width: 220px;
+	height: 335px;
+	margin-left: 1003px;
+	box-sizing: border-box;
+	border: 1px solid #333;
+}
+.bs_item3 a {
+	color: #fff;
+	font-size: 19px;
+	font-weight: 600;
+	margin-top: 244px;
+	margin-left: -5px;
+	text-align: center;
+}
+
+.bs_item4 {
+	background: url(https://info.korail.com/site/info/images/main/business_img03.jpg) no-repeat;
+	width: 220px;
+	height: 335px;
+	margin-left: 1245px;
+	margin-top: -335px;
+	box-sizing: border-box;
+	border: 1px solid #333;
+}
+.bs_item4 a {
+	color: #fff;
+	font-size: 19px;
+	font-weight: 600;
+	margin-top: 244px;
+	margin-left: -5px;
+	text-align: center;
+}
+.section_business .detail {
+    position:absolute;
+	width: 163px;
+	height: 37px;
+	box-sizing: border-box;
+	border: 1px solid #000;
+	text-align: center;
+	padding: 8px;
+    left:-189px;
+	top: 295px;
+}
+.section_business .detail:hover {
+	background: #000;
+	color: #fff;
+}
+.sv {
+    position:relative;
+    left: -190px;
+    top: -205px;    
+	width: 328px;
+    height: 138px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    padding: 23px 24px 26px;
+    box-sizing: border-box;
+    box-shadow: 8px 13px 30px 0 rgb(0 84 166 / 45%);
+    background-color: rgb(0 84 166 / 80%);
+    color: #fff;
+    opacity: 1;
+    line-height: 32px;
+    z-index: 9999;
+}
+.section_news {
+	display: flex;
+	height: 500px;
+	align-content: center;
+	justify-content: center;
+	align-items: flex-start;
+    padding-top: 100px;
+}
+h2.news_tit.cf {
+	z-index: 10;
+	margin-top: 73px;
+	/* margin-left: -103px; */
+	margin-left: -625px;
+	background: url(https://info.korail.com/site/info/images/main/news_title.png) no-repeat right top;
+	width: 298px;
+	height: 176px;
+	font-size: 0;
+	line-height: 0;
+}
+
+.news_tab .news_btn {
+	border-radius: 50%;
+	width: 79px;
+	height: 79px;
+	background-color: #0054a6;
+	border: none;
+	color: #fff;
+	font-family: inherit;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: -0.0035em;
+	margin-left: 73px;
+	margin-top: -6px;
+}
+.news_tab a {
+	color: #0054a6;
+	font-size: 20px;
+	font-weight: 600;
+	margin-left: 23px;
+	margin-right: 0px;
+}
+
+.news_tab a:hover {
+	text-decoration: underline;
+}
+.new_list.cf .news_all {
+	display: inline-block;
+	margin-left: -309px;
+	margin-top: 129px;
+	box-sizing: border-box;
+	border: none;
+}
+
+.new_list.cf .news_fl {
+	margin-bottom: 40px;
+	font-size: 18px;
+}
+
+.news_fl .news_category {
+	color: #ea4c49;
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: -0.035em;
+	padding: 30px 20px;
+	margin-bottom: 30px;
+}
+.news_fl span {
+	color: #aaa;
+	font-size: 17px;
+}
+.group5 {
+	position: relative;
+	width: 100%;
+    height:700px;
+}
+.group5 .inner{position:relative;}
+.group5 .inner>*{position:absolute;}
+.group5 .popup_slide{
+    position:absolute;
+    z-index: 2;
+    top:0;
+    left:0;
+}
+.group5 .popup_slide img {
+	background: url(../pop_pic2.png) no-repeat center center;
+	box-sizing: border-box;
+	width: 400px;
+	height: 320px;
+	border-radius: 50px 50px;
+	background-size: auto 100%;
+	transform: translateY(0);
+	transition: 0.7s all ease-in-out;
+	box-shadow: 10px 10px 20px rgba(82, 79, 79, 0.541);
+
+}
+
+.popup_slide .popup_item2 a:hover img {
+	background-size: auto 110%;
+}
+
+.pp_control {
+	margin: 50px 45px;
+	margin-top: 13px;
+}
+.pp_control .popup_prev {
+	background: url(../outline_arrowbk.png) no-repeat center center;
+	width: 31px;
+	height: 31px;
+	/* opacity: 1;
+	z-index: 1; */
+	border-radius: 50%;
+	border: none;
+	box-shadow: 3px 4px 20px 0 rgba(0, 0, 0, 0.07);
+	background-color: #fff;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.pp_control .popup_auto {
+	background: url(../black_pause.png) no-repeat center center;
+	width: 31px;
+	height: 31px;
+	/* opacity: 1;
+	z-index: 1; */
+	border-radius: 50%;
+	border: none;
+	box-shadow: 3px 4px 20px 0 rgba(0, 0, 0, 0.07);
+	background-color: #fff;
+	vertical-align: middle;
+}
+.pp_control.popup_next {
+	background: url(../outline_arrow.png) no-repeat center center;
+	width: 31px;
+	height: 31px;
+	border-radius: 50%;
+	border: none;
+	box-shadow: 3px 4px 20px 0 rgba(0, 0, 0, 0.07);
+	background-color: #fff;
+	vertical-align: middle;
+}
+
+.pp_control .popup_count {
+	border: none;
+	margin-left: 40px;
+	padding: 9px 15px 5px;
+	border-radius: 19px;
+	box-shadow: 3px 4px 20px 0 rgb(0 0 0 / 7%);
+	background-color: #fff;
+	vertical-align: middle;
+}
+
+.career {
+	opacity: 1;
+	text-align: right;
+	padding: 462px 142px;
+
+}
+.inner .career {
+    width: 100%;
+    height: 500px;
+    right: 0;
+    top:-200px;
+    background: url(../career.png) no-repeat right center / contain;
+}
+.career .career_title {
+	font-size: 78px;
+	font-weight: 600;
+	color: #fff;
+	letter-spacing: -0.035em;
+	line-height: 80px;
+	margin-top: -223px;
+	text-shadow: 3px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.career .career_subtitle {
+	margin-top: 6px;
+	font-size: 20px;
+	color: #fff;
+	letter-spacing: -0.035em;
+	text-shadow: 3px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.career .career_list {
+	margin-top: 85px;
+	font-size: 0;
+}
+.career .career_anchor.n1 {
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	margin-left: -629px;
+	padding-top: 113px;
+	border: 2px solid #fff;
+	border-radius: 43px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+	letter-spacing: -0.035em;
+	text-align: center;
+	margin-top: 29px;
+}
+.career .career_anchor.n2 {
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	margin-left: -406px;
+	padding-top: 113px;
+	border: 2px solid #fff;
+	border-radius: 43px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+	letter-spacing: -0.035em;
+	text-align: center;
+	margin-top: 29px;
+}
+.career .career_anchor.n3 {
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	margin-left: -188px;
+	padding-top: 113px;
+	border: 2px solid #fff;
+	border-radius: 43px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+	letter-spacing: -0.035em;
+	text-align: center;
+	margin-top: 29px;
+}
+.banner{
+    /* height: 30px; */
+    max-width: 1400px;
+    margin: auto;
+}
+.banner .track{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.banner .track li{
+    max-width: 340px;
+    flex: 1 1 10%;
+    border: 1px solid #bbb;
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 51px 0;
+    background-size:100%;
+    background-position:center top;
+}
+.banner .banner_fl1 {
+	background: url(https://info.korail.com/DATA/banner/20211206021713049_rLyL.png) no-repeat;
+}
+.banner .banner_fl2 {
+	background: url(https://info.korail.com/DATA/banner/20220104093701401_OcLy.jpg) no-repeat;
+
+}
+.banner .banner_fl3 {
+	background: url(https://info.korail.com/DATA/banner/20211206021719913_RJ8b.png) no-repeat;
+
+}
+.banner .banner_fl4 {
+	background: url(https://info.korail.com/DATA/banner/20211206021704230_VHCY.png) no-repeat;
+
+}
+.banner_control.fl {
+	margin-top: 20px;
+	margin-left: 930px;
+}
+
+.banner_control.fl .banner_prev {
+	background: url(https://info.korail.com/site/info/images/main/popup_prev.svg) no-repeat;
+	background-size: contain;
+	width: 11px;
+	height: 14px;
+	border: none;
+	margin-left: -6px;
+	padding: 0px 11px;
+}
+
+.banner_auto {
+	background: url(https://info.korail.com/site/info/images/main/popup_play.svg) no-repeat;
+	background-size: contain;
+	width: 11px;
+	height: 14px;
+	border: none;
+	padding-left: 22px;
+}
+.banner_next {
+	background: url(https://info.korail.com/site/info/images/main/popup_next.svg) no-repeat;
+	background-size: contain;
+	width: 11px;
+	height: 14px;
+	border: none;
+	margin: 1px 0;
+}
+
+#footer {
+	background-color: #303642;
+	/* position: relative; */
+	width: 100%;
+	margin-top: 171px;
+	/* z-index: 20; */
+}
+#footer .footer_top {
+	border-bottom: 1px solid #595e68;
+}
+.footer_link {
+	text-decoration: none;
+}
+.link1 a {
+	color: #89b8f5;
+	float: left;
+	font-size: 17px;
+	padding: 25px 0px;
+}
+.link2 a {
+	color: #fff;
+	float: left;
+	font-size: 17px;
+	padding: 25px 23px;
+}
+.link3 a {
+	color: #fff;
+	float: left;
+	font-size: 17px;
+	padding: 25px 0px;
+}
+#footer .sns_list li {
+	width: 31px;
+	height: 31px;
+	border-radius: 50%;
+	background-color: #595e68;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 13px;
+	float: left;
+}
+#footer	.all_fr {
+	float: right;
+	padding-top: 15px;
+	margin-right: -50px;
+
+}
+.sns_list.cf .youtube{
+	background:url("https://info.korail.com/common/images/layout/footer_youtube.svg")no-repeat center;
+	width: 16px;
+	height: 11px;
+}
+.sns_list.cf .face-book{
+	background: url("https://info.korail.com/common/images/layout/footer_facebook.svg")no-repeat center;
+	width: 10px;
+	height: 17px;
+}
+.sns_list.cf .instagram{
+	background: url("https://info.korail.com/common/images/layout/footer_instagram.svg")no-repeat center;
+}
+.sns_list.cf .blog{
+	background: url("https://info.korail.com/common/images/layout/footer_blog.svg")no-repeat center;
+	width: 10px;
+	height: 14px;
+}
+.sns_list.cf .twitter{
+	background: url("https://info.korail.com/common/images/layout/footer_twitter.svg")no-repeat center;
+	width: 16px;
+	height: 13px;
+}
+#footer-info {
+	height: 250px;
+}
+.footer_logo img {
+	padding-top: 37px;
+}
+
+#footer .info_text {
+	line-height: 0;
+	margin-left: 155px;
+	margin-top: -40px;
+}
+.info_text .korail_info {
+	margin-top: 5px;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 17px;
+	line-height: 34px;
+}
+#footer .copyright {
+	color: rgba(136, 137, 146, 0.7);
+	letter-spacing: 0;
+	font-size: 17px;
+	line-height: 34px;
+}
+.site_btn {
+	margin-right: -165px;
+}
+.site_btn .sbtn1 {
+	float: right;
+	margin-top: -105px;
+	color: #fff;
+	font-size: 15px;
+	margin-right: 305px;
+	padding-bottom: 12px;
+	padding-right: 130px;
+	border-bottom: 3px solid #fff;
+	background: url(../white_arrow.png) no-repeat right;
+}
+
+.site_btn .sbtn2 {
+	float: right;
+	margin-top: -105px;
+	color: #fff;
+	font-size: 15px;
+	margin-right: 104px;
+	padding-right: 100px;
+	padding-bottom: 12px;
+	border-bottom: 3px solid #fff;
+	background: url(../white_arrow.png) no-repeat right;
+}
+
+.certification {
+	margin-left: 1080px;
+	margin-top: -64px;
+}
+.certification .cer1 {
+	height: 70px;
+	margin-top: 11px;
+}
+.certification .cer2 {
+	height: 58px;
+	margin-left: 83px;
+	margin-top: -60px;
+}
