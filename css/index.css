@@ -294,7 +294,7 @@ a:visited {
 }
 
 .img-list_draggable .popup_item1 img {
-	background: url(../pop_pic1.png) no-repeat center center;
+	background: url(../images/pop_pic1.png) no-repeat center center;
 	box-sizing: border-box;
 	width: 400px;
 	height: 320px;
@@ -341,7 +341,7 @@ html .visual .visual_bottom_area {
 }
 
 .m_visual .popup_prev {
-	background: url(../outline_arrowbk.png) no-repeat center center;
+	background: url(../images/outline_arrowbk.png) no-repeat center center;
 	width: 50px;
 	height: 50px;
 	opacity: 1;
@@ -349,6 +349,7 @@ html .visual .visual_bottom_area {
 	border-radius: 50%;
 	border: none;
 	background-color: rgba(241, 237, 237, 0.89);
+	margin-top: 15px;
 }
 
 .m_visual .popup_controlfl:hover {
@@ -356,7 +357,7 @@ html .visual .visual_bottom_area {
 }
 
 .m_visual .popup_auto {
-	background: url(../black_pause.png) no-repeat center center;
+	background: url(../images/black_pause.png) no-repeat center center;
 	width: 50px;
 	height: 50px;
 	margin: 0 8px;
@@ -365,10 +366,11 @@ html .visual .visual_bottom_area {
 	border-radius: 50%;
 	border: none;
 	background-color: rgba(241, 237, 237, 0.89);
+	margin-top: 15px;
 }
 
 .m_visual .popup_next {
-	background: url(../outline_arrow.png) no-repeat center center;
+	background: url(../images/outline_arrow.png) no-repeat center center;
 	width: 50px;
 	height: 50px;
 	opacity: 1;
@@ -376,6 +378,7 @@ html .visual .visual_bottom_area {
 	border-radius: 50%;
 	border: none;
 	background-color: rgba(241, 237, 237, 0.89);
+	margin-top: 15px;
 }
 
 .m_visual .popup_next:hover {
@@ -393,7 +396,7 @@ html .visual .visual_bottom_area {
 	z-index: 1;
 	font-size: 24px;
 	font-weight: 300;
-	margin: 0 10px;
+	margin: 5 15px;
 }
 /* 팝업이미지 버튼 끝 */
 
@@ -421,7 +424,7 @@ html .visual .visual_bottom_area {
 	font-size: 16px;
 	font-weight: 600;
 	letter-spacing: 2px;
-	background: url(../expand_more.png) no-repeat center center;
+	background: url(../images/expand_more.png) no-repeat center center;
 	width: 50px;
 	height: 50px;
 	z-index: 1;
@@ -462,7 +465,7 @@ html .visual .visual_bottom_area {
 	color: #fff;
 }
 .visual_btns.dot {
-	background: url(../white_dot.png);
+	background: url(../images/white_dot.png);
 }
 /* 챗봇 */
 .chatbot {
@@ -485,16 +488,16 @@ html .visual .visual_bottom_area {
 }
 
 .dot.fl {
-	background: url(../white_dot.png);
-	width: 17px;
-	height: 18px;
+	background: url(../images/white_dot.png);
+	width: 24px;
+	height: 27px;
 	opacity: 1;
 	z-index: 1;
-	margin: 15px 4px;
+	margin: 13px -1px;
 	border: 0;
 }
 .play_pause {
-	background: url(../white_play.png) no-repeat center center;
+	background: url(../images/white_play.png) no-repeat center center;
 	width: 24px;
 	height: 27px;
 	opacity: 1;
@@ -505,24 +508,12 @@ html .visual .visual_bottom_area {
 .visual_text span {
 	text-align: justify;
 	top: 0;
-	margin-right: 1300px;
+	margin-right: 1130px;
 	color: #fff;
 	font-size: 12px;
 	font-weight: 600;
 	line-height: 1px;
 }
-/* 자주찾는메뉴 */
-/* 자주찾는메뉴상단 코레일로고이미지 */
-/* .section_content{
-    top: -392px;
-    left: 50%;
-    width: 2608px;
-    height: 630px;
-    background: url(https://info.korail.com/site/info/images/main/main_bg_logo.png) no-repeat center/contain;
-    opacity: 0.02;
-  
-} */
-
 
 #main .inner .section_content{
     padding: 99px 0;
@@ -781,7 +772,7 @@ h2.news_tit.cf {
     left:0;
 }
 .group5 .popup_slide img {
-	background: url(../pop_pic2.png) no-repeat center center;
+	background: url(../images/pop_pic2.png) no-repeat center center;
 	box-sizing: border-box;
 	width: 400px;
 	height: 320px;
@@ -802,7 +793,7 @@ h2.news_tit.cf {
 	margin-top: 13px;
 }
 .pp_control .popup_prev {
-	background: url(../outline_arrowbk.png) no-repeat center center;
+	background: url(../images/outline_arrowbk.png) no-repeat center center;
 	width: 31px;
 	height: 31px;
 	/* opacity: 1;
@@ -816,7 +807,7 @@ h2.news_tit.cf {
 }
 
 .pp_control .popup_auto {
-	background: url(../black_pause.png) no-repeat center center;
+	background: url(../images/black_pause.png) no-repeat center center;
 	width: 31px;
 	height: 31px;
 	/* opacity: 1;
@@ -827,8 +818,8 @@ h2.news_tit.cf {
 	background-color: #fff;
 	vertical-align: middle;
 }
-.pp_control.popup_next {
-	background: url(../outline_arrow.png) no-repeat center center;
+.pp_control .popup_next {
+	background: url(../images/outline_arrow.png) no-repeat center center;
 	width: 31px;
 	height: 31px;
 	border-radius: 50%;
@@ -836,11 +827,12 @@ h2.news_tit.cf {
 	box-shadow: 3px 4px 20px 0 rgba(0, 0, 0, 0.07);
 	background-color: #fff;
 	vertical-align: middle;
+	margin-left: 5px;
 }
 
 .pp_control .popup_count {
 	border: none;
-	margin-left: 40px;
+	margin-left: 10px;
 	padding: 9px 15px 5px;
 	border-radius: 19px;
 	box-shadow: 3px 4px 20px 0 rgb(0 0 0 / 7%);
@@ -859,7 +851,7 @@ h2.news_tit.cf {
     height: 500px;
     right: 0;
     top:-200px;
-    background: url(../career.png) no-repeat right center / contain;
+    background: url(../images/career.png) no-repeat right center / contain;
 }
 .career .career_title {
 	font-size: 78px;
@@ -881,6 +873,7 @@ h2.news_tit.cf {
 	margin-top: 85px;
 	font-size: 0;
 }
+
 .career .career_anchor.n1 {
 	position: absolute;
 	width: 180px;
@@ -895,6 +888,10 @@ h2.news_tit.cf {
 	letter-spacing: -0.035em;
 	text-align: center;
 	margin-top: 29px;
+}
+
+.career .career_anchor.n1:hover{
+	background-image: url("https://info.korail.com/site/info/images/main/career_icon01_hover.svg") no-repeat center;
 }
 .career .career_anchor.n2 {
 	position: absolute;
@@ -911,6 +908,9 @@ h2.news_tit.cf {
 	text-align: center;
 	margin-top: 29px;
 }
+.career .career_anchor.n2:hover{
+	background-image: url("https://info.korail.com/site/info/images/main/career_icon02.svg") no-repeat center;
+}
 .career .career_anchor.n3 {
 	position: absolute;
 	width: 180px;
@@ -925,6 +925,9 @@ h2.news_tit.cf {
 	letter-spacing: -0.035em;
 	text-align: center;
 	margin-top: 29px;
+}
+.career .career_anchor.n3:hover{
+	background-image: url("https://info.korail.com/site/info/images/main/career_icon03.svg") no-repeat center;
 }
 .banner{
     /* height: 30px; */
@@ -1041,25 +1044,25 @@ h2.news_tit.cf {
 
 }
 .sns_list.cf .youtube{
-	background:url("https://info.korail.com/common/images/layout/footer_youtube.svg")no-repeat center;
+	background:url("https://info.korail.com/common/images/layout/footer_youtube.svg") no-repeat center;
 	width: 16px;
 	height: 11px;
 }
 .sns_list.cf .face-book{
-	background: url("https://info.korail.com/common/images/layout/footer_facebook.svg")no-repeat center;
+	background: url("https://info.korail.com/common/images/layout/footer_facebook.svg") no-repeat center;
 	width: 10px;
 	height: 17px;
 }
 .sns_list.cf .instagram{
-	background: url("https://info.korail.com/common/images/layout/footer_instagram.svg")no-repeat center;
+	background: url("https://info.korail.com/common/images/layout/footer_instagram.svg") no-repeat center;
 }
 .sns_list.cf .blog{
-	background: url("https://info.korail.com/common/images/layout/footer_blog.svg")no-repeat center;
+	background: url("https://info.korail.com/common/images/layout/footer_blog.svg") no-repeat center;
 	width: 10px;
 	height: 14px;
 }
 .sns_list.cf .twitter{
-	background: url("https://info.korail.com/common/images/layout/footer_twitter.svg")no-repeat center;
+	background: url("https://info.korail.com/common/images/layout/footer_twitter.svg") no-repeat center;
 	width: 16px;
 	height: 13px;
 }
@@ -1099,7 +1102,7 @@ h2.news_tit.cf {
 	padding-bottom: 12px;
 	padding-right: 130px;
 	border-bottom: 3px solid #fff;
-	background: url(../white_arrow.png) no-repeat right;
+	background: url(../images/white_arrow.png) no-repeat right;
 }
 
 .site_btn .sbtn2 {
@@ -1111,7 +1114,7 @@ h2.news_tit.cf {
 	padding-right: 100px;
 	padding-bottom: 12px;
 	border-bottom: 3px solid #fff;
-	background: url(../white_arrow.png) no-repeat right;
+	background: url(../images/white_arrow.png) no-repeat right;
 }
 
 .certification {

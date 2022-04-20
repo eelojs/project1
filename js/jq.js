@@ -1,6 +1,6 @@
 const btt=$('#back-to-top');
 $(window).scroll(function(){
-  console.log('top',$(window).scrollTop())
+$(window).scrollTop()
   if($(window).scrollTop() > 300){
     btt.addClass('visible');
   }else{
