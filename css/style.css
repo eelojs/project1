@@ -16,10 +16,7 @@ body {
     line-height: 24px;
     font-weight: 400;
 }
-/* {
-    background: url(https://info.korail.com/common/images/layout/sub_bg6.jpg)no-repeat;
-    width: 100%;
-} */
+
 
 .clearfix::after {
     content: '';
@@ -53,7 +50,6 @@ body {
 #search_wrap select,#search_wrap input {
     font-size: 16px;
     margin-right: 2px;
-    padding: 20px auto;
     width: 100px;
 }
 
@@ -137,7 +133,6 @@ body {
 #board_wrap .content_wrap {
     width: 95%;
     text-align:left;
-    padding: 10;
     height: 0;
     font-size: 16px;
     font-family: "맑은 고딕","돋움","굴림",sans-serif;
@@ -170,7 +165,6 @@ body {
 
 #board_wrap input:checked ~ div.content_wrap {
     height: auto;
-    /* 박스 안에 텍스트가 있을때 텍스트의 줄 수에 맞게 알아서 */
     padding: 5%;
 }
 
